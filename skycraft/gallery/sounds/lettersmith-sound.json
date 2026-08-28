@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "mode": "single",
+  "crossfade_ms": 0,
+  "tracks": [
+    {
+      "filename": "music.mp3",
+      "display_title": "Skyrim Theme Song Full (Dovahkiin Song)",
+      "duration_seconds": 235.798639,
+      "content_hash": "4b003c1038873fa1025f04e0228fcf6320c4dd028336cf26bbc586cd1d3aad68",
+      "original_name": "Skyrim Theme Song - Full (Dovahkiin Song).mp3"
+    }
+  ]
+}

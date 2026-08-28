@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "mode": "single",
+  "crossfade_ms": 0,
+  "tracks": [
+    {
+      "filename": "music.mp3",
+      "display_title": "Kingdom Hearts II Sanctuary",
+      "duration_seconds": 257.091338,
+      "content_hash": "de4533f83cff813e6100b4a3375e58f65f6ebf5d7e8601cff45d4af19c8ac7d4",
+      "original_name": "Kingdom Hearts II Sanctuary.mp3"
+    }
+  ]
+}

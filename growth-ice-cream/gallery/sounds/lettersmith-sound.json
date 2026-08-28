@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "mode": "playlist",
+  "crossfade_ms": 0,
+  "tracks": [
+    {
+      "filename": "music.mp3",
+      "display_title": "Chris Tomlin How Great Is Our God",
+      "duration_seconds": 305.005708,
+      "content_hash": "5afbd1abe1746de1c7f77c06bfc849078d06326689321db7c05d9979747e2933",
+      "original_name": "Chris Tomlin - How Great Is Our God.mp3"
+    }
+  ]
+}

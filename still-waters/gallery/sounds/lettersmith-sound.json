@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "mode": "single",
+  "crossfade_ms": 0,
+  "tracks": [
+    {
+      "filename": "music.mp3",
+      "display_title": "Sung Amazing Grace",
+      "duration_seconds": 179.562667,
+      "content_hash": "2600b79893c9e3820490d45dbb310d378b360ffef3498abbabd8bdd1bea1b32a",
+      "original_name": "Sung Amazing Grace.mp3"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heraldry</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preload" as="image" href="gallery/pages/cover.png" fetchpriority="high">
+  <link rel="preload" as="image" href="gallery/controls/cleft.png" fetchpriority="high">
+  <link rel="preload" as="image" href="gallery/controls/cright.png" fetchpriority="high">
+  <link rel="preload" as="audio" href="gallery/sounds/glissando.mp3">
+</head>
+
+<body>
+  <div id="curtain-overlay" aria-hidden="false" role="dialog" aria-modal="true" aria-labelledby="begin-button">
+    <img id="curtain-left"  src="gallery/controls/cleft.png"  alt="" aria-hidden="true" decoding="async" fetchpriority="high">
+    <img id="curtain-right" src="gallery/controls/cright.png" alt="" aria-hidden="true" decoding="async" fetchpriority="high">
+    <button id="begin-button" type="button">Tap to Begin</button>
+  </div>
+
+  <div id="slideshow" aria-hidden="true">
+    <!-- Page-turn overlay (JS sizes to the ACTIVE page-image rect) -->
+    <div id="turn" aria-hidden="true">
+      <div class="sheet sheet-front visible" id="sheetFront">
+        <img id="turnFrontImg" alt="" aria-hidden="true">
+      </div>
+      <!-- kept for compatibility; never shown after this fix -->
+      <div class="sheet sheet-back hidden" id="sheetBack">
+        <img id="turnBackImg" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div id="turnShadow" aria-hidden="true"></div>
+
+    <section class="slide active" data-index="0" id="slide-0">
+      <img src="gallery/pages/cover.png" alt="Cover Page" decoding="async" fetchpriority="high">
+    </section>
+
+    <section class="slide" data-index="1" id="slide-1">
+      <img src="gallery/pages/letter.png" alt="Main Letter" decoding="async">
+    </section>
+
+    <section class="slide" data-index="2" id="slide-2">
+      <img src="gallery/pages/wall.png" alt="Text Wall Background" decoding="async">
+      <button id="close-text" class="hud-button hud-button-close" type="button" title="Close Text" aria-label="Close message" aria-controls="textWall">&times;</button>
+      <div class="text-wall" id="textWall" role="dialog" aria-modal="false" aria-label="Message text" aria-hidden="true" tabindex="-1" style="--message-overlay-rgb:0,0,0;--message-overlay-opacity:0.580;--message-ink:#ffffff;--wall-fade-ms:900ms;">
+        <div class="text-wall-content" id="textWallContent"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta charset="utf-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: "\2610"; }
+li.checked::marker { content: "\2612"; }
+</style></head><body style=" font-family:'Segoe UI'; font-size:11px; font-weight:400; font-style:normal;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:300%;"><a name="docs-internal-guid-5c688399-7fff-208a-bf0c-d5c56038f694"></a><span style=" font-family:'Vivaldi'; font-size:90pt; color:#fbff23; background-color:transparent;">D</span><span style=" font-family:'Vivaldi'; font-size:90pt; color:#fbff23; background-color:transparent;">ear Angel Hill,</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:300%;"><span style=" font-family:'Pristina'; font-size:20pt; color:#fffef3; background-color:transparent;">I wanted to send this letter of encouragement. Sorry this took so long. I had a pile of school projects, so I had to push this back, and then the holidays got busy with travel. But after our K-D, I really wanted to follow through and write to you to encourage you to push yourself to find passions you genuinely care about and to deliberately give them time.</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:300%;"><span style=" font-family:'Pristina'; font-size:20pt; color:#feffaa; background-color:transparent;">Whether or not you will immediately excel, because growth requires space. Who’s to say what talents you haven’t discovered yet simply because you never gave them enough time? And who’s to say how God might use those gifts—not only to help you grow, but to strengthen the people around you?</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:300%;"><span style=" font-family:'Pristina'; font-size:20pt; color:#feffaa; background-color:transparent;">The good side of this is that you can create your own metrics—standards that are meaningful to you. You are a very encouraging sister. I think you have a real heart for encouraging others, and it shows. I also know that you want to become a better Bible talk leader. So start there.</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:300%;"><span style=" font-family:'Pristina'; font-size:20pt; color:#feffaa; background-color:transparent;">Whatever you decide to pursue, I’m </span><span style=" font-family:'Pristina'; font-size:22pt; color:#feffaa; background-color:transparent;">confident</span><span style=" font-family:'Pristina'; font-size:20pt; color:#feffaa; background-color:transparent;"> that if you give it time and consistency, you will excel.</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:300%;"><span style=" font-family:'Pristina'; font-size:20pt; color:#feffaa; background-color:transparent;">Perfectionism can make it hard to start. But excellence doesn’t come from waiting until you’re good at something—it comes from beginning when you’re not. If you step into things consistently, even imperfectly, I genuinely believe you will grow into them.</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:300%;"><span style=" font-family:'Pristina'; font-size:20pt; color:#feffaa; background-color:transparent;">Keep growing. Try new things—not just in structured spaces, but in the places you choose for yourself. That’s often where calling becomes clear.</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:300%;"><span style=" font-family:'Pristina'; font-size:17pt; font-style:italic; color:#00ffff; background-color:transparent;">P.S. Did you ever start junk journaling?</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:300%;"><span style=" font-family:'Pristina'; font-size:17pt; font-style:italic; color:#ff00ea; background-color:transparent;">P.P.S. Did you ever start reading Yumi and the Nightmare Painter?</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:300%;"><a name="docs-internal-guid-bfb946b7-7fff-d912-49cf-41375559eec4"></a><span style=" font-family:'Pristina'; font-size:17pt; font-style:italic; color:#aa00ff; background-color:transparent;">I</span><span style=" font-family:'Pristina'; font-size:17pt; font-style:italic; color:#aa00ff; background-color:transparent;">’m always trying to get more people into Brandon Sanderson’s books so I have more people to talk too about them .</span></p></body></html></div>
+      </div>
+    </section>
+
+    <section class="slide" data-index="3" id="slide-3">
+      <img src="gallery/pages/back.png" alt="Final Backdrop" decoding="async">
+    </section>
+
+    <button id="prev" class="nav-button" type="button" title="Previous page" aria-label="Previous page">
+      <img src="gallery/controls/ppage.png" alt="" aria-hidden="true">
+    </button>
+    <button id="next" class="nav-button" type="button" title="Next page" aria-label="Next page">
+      <img src="gallery/controls/npage.png" alt="" aria-hidden="true">
+    </button>
+
+    <div id="progress" aria-live="polite">Page 1 of 4</div>
+
+    <button
+      id="open-text"
+      class="hud-button hud-button-icon"
+      type="button"
+      title="Show Message"
+      aria-label="Show message"
+      aria-controls="textWall"
+      aria-expanded="false"
+      aria-hidden="true"
+    >
+      <img src="gallery/controls/showmessageicon.png" alt="" aria-hidden="true" decoding="async">
+    </button>
+  </div>
+
+  <div id="volume-control" aria-hidden="true">
+    <button
+      id="volume-icon"
+      class="hud-button hud-button-icon"
+      type="button"
+      title="Volume"
+      aria-label="Toggle volume slider"
+      aria-controls="volume-slider"
+      aria-expanded="false"
+    >
+      <img id="volume-icon-img" src="gallery/controls/volon.png" alt="" aria-hidden="true" decoding="async">
+    </button>
+  </div>
+
+  <audio id="bg-music" src="gallery/sounds/music.mp3" preload="auto" loop playsinline></audio>
+
+  <script>
+    const INITIAL_VOLUME = 50;
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

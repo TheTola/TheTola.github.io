@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "mode": "single",
+  "crossfade_ms": 0,
+  "tracks": [
+    {
+      "filename": "music.mp3",
+      "display_title": "AMAZING GRACE Viola",
+      "duration_seconds": 177.748753,
+      "content_hash": "e41d3bbd73d847b467e5d91170937856a41314cfbdbe319bc02ebff111bc9096",
+      "original_name": "AMAZING GRACE  - Viola.mp3"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Still Waters</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preload" as="image" href="gallery/pages/cover.png" fetchpriority="high">
+  <link rel="preload" as="image" href="gallery/controls/cleft.png" fetchpriority="high">
+  <link rel="preload" as="image" href="gallery/controls/cright.png" fetchpriority="high">
+  <link rel="preload" as="audio" href="gallery/sounds/glissando.mp3">
+  <link rel="preload" as="audio" href="gallery/sounds/music.mp3" type="audio/mpeg">
+</head>
+
+<body>
+  <main id="letter-preview">
+  <div id="curtain-overlay" aria-hidden="false" role="dialog" aria-modal="false" aria-labelledby="begin-button">
+    <img id="curtain-left"  src="gallery/controls/cleft.png"  alt="" aria-hidden="true" decoding="async" fetchpriority="high">
+    <img id="curtain-right" src="gallery/controls/cright.png" alt="" aria-hidden="true" decoding="async" fetchpriority="high">
+    <button id="begin-button" type="button">Tap to Begin</button>
+  </div>
+
+  <button
+    id="fullscreen-button"
+    class="hud-button viewer-action"
+    type="button"
+    title="Enter fullscreen"
+    aria-label="Enter fullscreen"
+  >Fullscreen</button>
+
+  <div id="slideshow" aria-hidden="true">
+    <div id="turn" aria-hidden="true">
+      <div class="sheet sheet-front visible" id="sheetFront">
+        <img id="turnFrontImg" alt="">
+      </div>
+    </div>
+    <div id="turnShadow" aria-hidden="true"></div>
+
+    <section class="slide active" data-index="0" id="slide-0">
+      <img src="gallery/pages/cover.png" alt="Cover Page" decoding="async" fetchpriority="high">
+    </section>
+
+    <section class="slide" data-index="1" id="slide-1">
+      <img src="gallery/pages/letter.png" alt="Main Letter" decoding="async">
+    </section>
+
+    <section class="slide" data-index="2" id="slide-2">
+      <img src="gallery/pages/wall.png" alt="Text Wall Background" decoding="async">
+      <div class="text-wall" id="textWall" role="dialog" aria-modal="false" aria-label="Message text" aria-hidden="true" tabindex="-1" style="--message-overlay-rgb:245,235,210;--message-overlay-opacity:0.930;--message-overlay-surface-opacity:0.930;--message-overlay-blur:0px;--message-overlay-texture-opacity:0.026;--message-ink:#221710;--wall-fade-ms:900ms;">
+        <button id="close-text" class="hud-button hud-button-close" type="button" title="Close Text" aria-label="Close message" aria-controls="textWall">&times;</button>
+        <div class="text-wall-content" id="textWallContent"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta charset="utf-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: "\2610"; }
+li.checked::marker { content: "\2612"; }
+</style></head><body style=" font-family:'LetterSmithFont1', 'Segoe UI'; font-size:11px; font-weight:400; font-style:normal;">
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:60pt; color:#40e0d0;">Dear </span><a href="hypernote:Serenity%20means%20peacefulness%2C%20calmness%2C%20and%20freedom%20from%20disturbance%20or%20anxiety."><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:60pt; color:#40e0d0;">Serenity</span></a><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:60pt; color:#40e0d0;"> </span><a href="hypernote:McCarty%20is%20an%20Irish%20surname.%0A%0AIt%20comes%20from%20the%20Gaelic%20Mac%20C%C3%A1rthaigh%2C%20meaning%3A%0A%0A%E2%80%9Cson%20of%20C%C3%A1rthach%E2%80%9D%0A%0AThe%20personal%20name%20C%C3%A1rthach%20means%3A%0A%0Aloving%2C%20kind%2C%20or%20the%20loving%20one"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:60pt; color:#40e0d0;">McCarty</span></a><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:60pt; color:#40e0d0;">,</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:23pt; color:#40e0d0;">Hi </span><a href="hypernote:Serenity%20means%20peacefulness%2C%20calmness%2C%20and%20freedom%20from%20disturbance%20or%20anxiety."><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:23pt; color:#40e0d0;">Serenity</span></a><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:23pt; color:#40e0d0;">,</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">How’s it going? It has been a week since our </span><a href="hypernote:Some%20prefer%20Kingdom%20Date."><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">E-Date</span></a><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">, and I wanted to send you this letter of </span><a href="hypernote:Hebrews%203%3A13%20NIV%0A%0A%E2%80%9CBut%20encourage%20one%20another%20daily%2C%20as%20long%20as%20it%20is%20called%20%E2%80%98Today%2C%E2%80%99%20so%20that%20none%20of%20you%20may%20be%20hardened%20by%20sin%E2%80%99s%20deceitfulness.%E2%80%9D"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">encouragement</span></a><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">. It was really awesome getting to talk to you.</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">Something I thought of recently is connected to </span><a href="hypernote:John%2015%3A1%E2%80%932%0A1%20%E2%80%9CI%20am%20the%20true%20vine%2C%20and%20my%20Father%20is%20the%20gardener.%202%20He%20cuts%20off%20every%20branch%20in%20me%20that%20bears%20no%20fruit%2C%20while%20every%20branch%20that%20does%20bear%20fruit%20he%20prunes%20so%20that%20it%20will%20be%20even%20more%20fruitful.%E2%80%9D"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:22pt; font-weight:700; font-style:italic; color:#ff7f50;">John 15:1–2</span></a><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">. A long time ago, I read a book that shared a story about how the author, who was a pastor, had his understanding of this verse changed after he purchased a vineyard. Once he had a vineyard and started working it himself, he began to realize so many things about that verse that, as a non-farmer, he never would have thought of before.</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">One of those things was pruning. People often think of pruning as simply cutting off a leaf or part of the plant, but he said he discovered that pruning was actually a multi-step process. The first step of pruning was not always to cut something off and throw it away. Sometimes you do cut it, and graft it somewhere else, lift it up, and place it in a better part of the vine.</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">For instance, if a branch is on the ground, touching the floor and covered in soil, the farmer might come, clean it off, and place it somewhere else—somewhere it can now receive more sunlight, more nutrients, and no longer be covered in dirt.</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">You see, when the branch is at the bottom and covered in soil—it cannot receive sunlight properly. No matter how much sunlight is available, the soil blocks it.</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">So the farmer, wanting the branch to bear more fruit, recognizes that the branch is not useless. It is simply being hampered by its environment. So he lifts it up, cleans it off, and places it in a better location. This allows the branch to receive the sunlight it needs.</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">I still agree with that author. Oftentimes, we see hardships in our lives as punishment, and we start looking for someone to blame. Sometimes </span><a href="hypernote:I%20personally%20tend%20to%20do%20this%3A%20I%20blame%20myself."><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">we blame ourselves</span></a><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">. Sometimes we blame the people around us. But oftentimes, it is really nothing more than </span><a href="hypernote:Is%20Awesome%21"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">God</span></a><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;"> moving us from one place to another.</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">That was one of the things I kept thinking about after our conversation. I do not know everything you have walked through, but I do know that sometimes </span><a href="hypernote:Is%20Awesome%21"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">God’s</span></a><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;"> care does not always feel gentle in the moment. Sometimes it feels like being moved, interrupted, or unsettled. But even then, He may be placing us somewhere we can receive what we need and bear more fruit.</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#40e0d0;">I wanted to share that with you because our conversation stayed on my mind. I can tell that you have an awesome, loving heart, and I hope I get more chances to get to know you in the future.</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><a href="hypernote:My%20Full%20Name%20It%20means%3A%0AGod%20is%20my%20wealth.%0A%0Aor%0A%0AGod%20is%20enough%20for%20me."><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#ff7f50;">-</span></a><a href="hypernote:My%20full%20name%20is%20Oluwatola%2C%20which%20means%20%E2%80%9CGod%20is%20my%20wealth%E2%80%9D%20or%20%E2%80%9CGod%20is%20enough%20for%20me%2C%E2%80%9D%20but%20I%20usually%20go%20by%20Tola."><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#ff7f50;">Oluwatola</span></a><a href="hypernote:My%20Full%20Name%20It%20means%3A%0AGod%20is%20my%20wealth.%0A%0Aor%0A%0AGod%20is%20enough%20for%20me."><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#ff7f50;"> </span></a><a href="hypernote:My%20last%20name%2C%20Ayedun%2C%20means%20life%20is%20good."><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:20pt; color:#ff7f50;">Ayedun</span></a></p></body></html></div>
+      </div>
+    </section>
+
+    <section class="slide" data-index="3" id="slide-3">
+      <img src="gallery/pages/back.png" alt="Final Backdrop" decoding="async">
+    </section>
+
+    <button id="prev" class="nav-button" type="button" title="Previous page" aria-label="Previous page">
+      <img src="gallery/controls/ppage.png" alt="" aria-hidden="true">
+    </button>
+    <button id="next" class="nav-button" type="button" title="Next page" aria-label="Next page">
+      <img src="gallery/controls/npage.png" alt="" aria-hidden="true">
+    </button>
+
+    <div id="viewer-actions" aria-label="Letter controls">
+      <div id="viewer-actions-left">
+        <button
+          id="restart-button"
+          class="hud-button viewer-action"
+          type="button"
+          title="Restart letter"
+          aria-label="Restart letter"
+        >Restart</button>
+        <button
+          id="mute-button"
+          class="hud-button viewer-action"
+          type="button"
+          title="Mute letter audio"
+          aria-label="Mute letter audio"
+          aria-pressed="false"
+        >Mute</button>
+      </div>
+    </div>
+
+    <button
+      id="open-text"
+      class="hud-button hud-button-icon"
+      type="button"
+      title="Show Message"
+      aria-label="Show message"
+      aria-controls="textWall"
+      aria-expanded="false"
+      aria-hidden="true"
+    >
+      <img src="gallery/controls/showmessageicon.png" alt="" aria-hidden="true" decoding="async">
+    </button>
+  </div>
+
+  <div id="volume-control" aria-hidden="true">
+    <button
+      id="volume-icon"
+      class="hud-button hud-button-icon"
+      type="button"
+      title="Volume"
+      aria-label="Toggle volume slider"
+      aria-controls="volume-slider"
+      aria-expanded="false"
+    >
+      <img id="volume-icon-img" src="gallery/controls/volon.png" alt="" aria-hidden="true" decoding="async">
+    </button>
+  </div>
+  </main>
+
+  <audio id="bg-music" preload="auto" playsinline></audio>
+  <audio id="bg-music-standby" preload="auto" playsinline></audio>
+
+  <script>
+    const INITIAL_VOLUME = 28;
+    const MUSIC_PLAYLIST = ["gallery/sounds/music.mp3"];
+    const MUSIC_CROSSFADE_MS = 0;
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daughter of God</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preload" as="image" href="gallery/pages/cover.png" fetchpriority="high">
+  <link rel="preload" as="image" href="gallery/controls/cleft.png" fetchpriority="high">
+  <link rel="preload" as="image" href="gallery/controls/cright.png" fetchpriority="high">
+  <link rel="preload" as="audio" href="gallery/sounds/glissando.mp3">
+  <link rel="preload" as="audio" href="gallery/sounds/music.mp3" type="audio/mpeg">
+</head>
+
+<body>
+  <main id="letter-preview">
+  <div id="curtain-overlay" aria-hidden="false" role="dialog" aria-modal="false" aria-labelledby="begin-button">
+    <img id="curtain-left"  src="gallery/controls/cleft.png"  alt="" aria-hidden="true" decoding="async" fetchpriority="high">
+    <img id="curtain-right" src="gallery/controls/cright.png" alt="" aria-hidden="true" decoding="async" fetchpriority="high">
+    <button id="begin-button" type="button">Tap to Begin</button>
+  </div>
+
+  <button
+    id="fullscreen-button"
+    class="hud-button viewer-action"
+    type="button"
+    title="Enter fullscreen"
+    aria-label="Enter fullscreen"
+  >Fullscreen</button>
+
+  <div id="slideshow" aria-hidden="true">
+    <div id="turn" aria-hidden="true">
+      <div class="sheet sheet-front visible" id="sheetFront">
+        <img id="turnFrontImg" alt="">
+      </div>
+    </div>
+    <div id="turnShadow" aria-hidden="true"></div>
+
+    <section class="slide active" data-index="0" id="slide-0">
+      <img src="gallery/pages/cover.png" alt="Cover Page" decoding="async" fetchpriority="high">
+    </section>
+
+    <section class="slide" data-index="1" id="slide-1">
+      <img src="gallery/pages/letter.png" alt="Main Letter" decoding="async">
+    </section>
+
+    <section class="slide" data-index="2" id="slide-2">
+      <img src="gallery/pages/wall.png" alt="Text Wall Background" decoding="async">
+      <div class="text-wall" id="textWall" role="dialog" aria-modal="false" aria-label="Message text" aria-hidden="true" tabindex="-1" style="--message-overlay-rgb:245,235,210;--message-overlay-opacity:0.930;--message-overlay-surface-opacity:0.930;--message-overlay-blur:0px;--message-overlay-texture-opacity:0.026;--message-ink:#221710;--wall-fade-ms:900ms;">
+        <button id="close-text" class="hud-button hud-button-close" type="button" title="Close Text" aria-label="Close message" aria-controls="textWall">&times;</button>
+        <div class="text-wall-content" id="textWallContent"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta charset="utf-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: "\2610"; }
+li.checked::marker { content: "\2612"; }
+</style></head><body style=" font-family:'LetterSmithFont1', 'Segoe UI'; font-size:11px; font-weight:400; font-style:normal;">
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><a name="docs-internal-guid-5bbeaaf8-7fff-a7dd-33cc-4124c8bcfec2"></a><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:100pt; color:#ff1e9d; background-color:transparent;">D</span><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:100pt; color:#ff1e9d; background-color:transparent;">ear Angel Hill,</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; color:#f6ff92; background-color:transparent;"> I hope this finds you well.</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; color:#f6ff92; background-color:transparent;">I really enjoyed our KD and i wanted to write a</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; color:#ffffff; background-color:transparent;">letter of encouragement eternal to go with it:</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; color:#ffffff; background-color:transparent;">“Therefore we do not lose heart. Though outwardly we are wasting away, yet inwardly we are being renewed day by day. For our light and momentary troubles are achieving for us an eternal glory that far outweighs them all.”</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; font-weight:700; color:#00aaff; background-color:transparent;">— 2 Corinthians 4:16–17</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; color:#f6ff92; background-color:transparent;">I’m sure you’ve come a long way and persevered through much after 9 years of being a disciple. The strength </span><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; font-weight:700; color:#0055ff; background-color:transparent;">God</span><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; color:#f6ff92; background-color:transparent;"> has given you is working something glorious within you—even when it’s hard for you to see.</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; color:#ffffff; background-color:transparent;">“The beginning of wisdom is this: Get wisdom. Though it costs all you have, get understanding.”</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; font-weight:700; color:#00aaff; background-color:transparent;">— Proverbs 4:7</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; color:#f6ff92; background-color:transparent;">I can really see you're going after Wisdom. It shows—not just in your goal to read 30 books, but in the heart behind it. Even the books you haven’t touched yet are proof that you’re invested in growing in every dimension. And finishing 26 already? That’s not just reading—that’s impressive.</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; color:#ffffff; background-color:transparent;">“But whose delight is in the law of the Lord, and who meditates on his law day and night. That person is like a tree planted by streams of water, which yields its fruit in season and whose leaf does not wither—whatever they do prospers.”</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; font-weight:700; color:#00aaff; background-color:transparent;">— Psalm 1:2–3</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; color:#f6ff92; background-color:transparent;">You’re rooted. Anchored. The fruit will come—because </span><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; font-weight:700; color:#0055ff; background-color:transparent;">God</span><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; color:#f6ff92; background-color:transparent;"> is the One nourishing you.</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; color:#f6ff92; background-color:transparent;">Never forget:</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; color:#ffffff; background-color:transparent;">“The Lord makes firm the steps of the one who delights in him; though he may stumble, he will not fall, for the Lord upholds him with his hand.”</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; font-weight:700; color:#00aaff; background-color:transparent;">— Psalm 37:23–24</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; color:#f6ff92; background-color:transparent;">Keep going. </span><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; font-weight:700; color:#0055ff; background-color:transparent;">God</span><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:20pt; color:#f6ff92; background-color:transparent;"> is with you—every step of the way.</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:15pt; font-weight:700; color:#94d6ff; background-color:transparent;">Ps. I apologize for the bing late had my computer Got</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:15pt; font-weight:700; color:#94d6ff; background-color:transparent;">damaged and had to replace parts an</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:15pt; font-weight:700; color:#94d6ff; background-color:transparent;">this was a much more complex</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:15pt; font-weight:700; color:#94d6ff; background-color:transparent;">a project than</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:138%;"><span style=" font-family:'LetterSmithFont2', 'Times New Roman', 'serif'; font-size:15pt; font-weight:700; color:#94d6ff; background-color:transparent;">I originally<br /> anticipated.</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></body></html></div>
+      </div>
+    </section>
+
+    <section class="slide" data-index="3" id="slide-3">
+      <img src="gallery/pages/back.png" alt="Final Backdrop" decoding="async">
+    </section>
+
+    <button id="prev" class="nav-button" type="button" title="Previous page" aria-label="Previous page">
+      <img src="gallery/controls/ppage.png" alt="" aria-hidden="true">
+    </button>
+    <button id="next" class="nav-button" type="button" title="Next page" aria-label="Next page">
+      <img src="gallery/controls/npage.png" alt="" aria-hidden="true">
+    </button>
+
+    <div id="viewer-actions" aria-label="Letter controls">
+      <div id="viewer-actions-left">
+        <button
+          id="restart-button"
+          class="hud-button viewer-action"
+          type="button"
+          title="Restart letter"
+          aria-label="Restart letter"
+        >Restart</button>
+        <button
+          id="mute-button"
+          class="hud-button viewer-action"
+          type="button"
+          title="Mute letter audio"
+          aria-label="Mute letter audio"
+          aria-pressed="false"
+        >Mute</button>
+      </div>
+    </div>
+
+    <button
+      id="open-text"
+      class="hud-button hud-button-icon"
+      type="button"
+      title="Show Message"
+      aria-label="Show message"
+      aria-controls="textWall"
+      aria-expanded="false"
+      aria-hidden="true"
+    >
+      <img src="gallery/controls/showmessageicon.png" alt="" aria-hidden="true" decoding="async">
+    </button>
+  </div>
+
+  <div id="volume-control" aria-hidden="true">
+    <button
+      id="volume-icon"
+      class="hud-button hud-button-icon"
+      type="button"
+      title="Volume"
+      aria-label="Toggle volume slider"
+      aria-controls="volume-slider"
+      aria-expanded="false"
+    >
+      <img id="volume-icon-img" src="gallery/controls/volon.png" alt="" aria-hidden="true" decoding="async">
+    </button>
+  </div>
+  </main>
+
+  <audio id="bg-music" preload="auto" playsinline></audio>
+  <audio id="bg-music-standby" preload="auto" playsinline></audio>
+
+  <script>
+    const INITIAL_VOLUME = 28;
+    const MUSIC_PLAYLIST = ["gallery/sounds/music.mp3"];
+    const MUSIC_CROSSFADE_MS = 0;
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

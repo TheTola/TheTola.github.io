@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "mode": "single",
+  "crossfade_ms": 0,
+  "tracks": [
+    {
+      "filename": "music.mp3",
+      "display_title": "Sanctuary performed by Maraia Lastra",
+      "duration_seconds": 179.722458,
+      "content_hash": "f12abb092cb7dde3eae09c697c9347428fbc7e07af9f41466eaa5fd64bf9f600",
+      "original_name": "Sanctuary performed by Maraia Lastra.mp3"
+    }
+  ]
+}

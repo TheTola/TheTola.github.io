@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "mode": "single",
+  "crossfade_ms": 0,
+  "tracks": [
+    {
+      "filename": "music.mp3",
+      "display_title": "Music",
+      "duration_seconds": 0.0,
+      "content_hash": "60d8a7b95e2d3d906d6d0f7cfa31a447c3c95a01956ba2db1de81aa12ad81398",
+      "original_name": "music.mp3"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Joyful Noise</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preload" as="image" href="gallery/pages/cover.png" fetchpriority="high">
+  <link rel="preload" as="image" href="gallery/controls/cleft.png" fetchpriority="high">
+  <link rel="preload" as="image" href="gallery/controls/cright.png" fetchpriority="high">
+  <link rel="preload" as="audio" href="gallery/sounds/glissando.mp3">
+  <link rel="preload" as="audio" href="gallery/sounds/music.mp3" type="audio/mpeg">
+</head>
+
+<body>
+  <main id="letter-preview">
+  <div id="curtain-overlay" aria-hidden="false" role="dialog" aria-modal="false" aria-labelledby="begin-button">
+    <img id="curtain-left"  src="gallery/controls/cleft.png"  alt="" aria-hidden="true" decoding="async" fetchpriority="high">
+    <img id="curtain-right" src="gallery/controls/cright.png" alt="" aria-hidden="true" decoding="async" fetchpriority="high">
+    <button id="begin-button" type="button">Tap to Begin</button>
+  </div>
+
+  <button
+    id="fullscreen-button"
+    class="hud-button viewer-action"
+    type="button"
+    title="Enter fullscreen"
+    aria-label="Enter fullscreen"
+  >Fullscreen</button>
+
+  <div id="slideshow" aria-hidden="true">
+    <div id="turn" aria-hidden="true">
+      <div class="sheet sheet-front visible" id="sheetFront">
+        <img id="turnFrontImg" alt="">
+      </div>
+    </div>
+    <div id="turnShadow" aria-hidden="true"></div>
+
+    <section class="slide active" data-index="0" id="slide-0">
+      <img src="gallery/pages/cover.png" alt="Cover Page" decoding="async" fetchpriority="high">
+    </section>
+
+    <section class="slide" data-index="1" id="slide-1">
+      <img src="gallery/pages/letter.png" alt="Main Letter" decoding="async">
+    </section>
+
+    <section class="slide" data-index="2" id="slide-2">
+      <img src="gallery/pages/wall.png" alt="Text Wall Background" decoding="async">
+      <div class="text-wall" id="textWall" role="dialog" aria-modal="false" aria-label="Message text" aria-hidden="true" tabindex="-1" style="--message-overlay-rgb:0,0,0;--message-overlay-opacity:0.930;--message-overlay-surface-opacity:0.930;--message-overlay-blur:0px;--message-overlay-texture-opacity:0.000;--message-ink:#ffffff;--wall-fade-ms:900ms;">
+        <button id="close-text" class="hud-button hud-button-close" type="button" title="Close Text" aria-label="Close message" aria-controls="textWall">&times;</button>
+        <div class="text-wall-content" id="textWallContent"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta charset="utf-8" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: "\2610"; }
+li.checked::marker { content: "\2612"; }
+</style></head><body style=" font-family:'LetterSmithFont1', 'Segoe UI'; font-size:11px; font-weight:400; font-style:normal;">
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:rgba(0,0,0,0.498039);"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:50pt; font-weight:700; color:#ff0000;">Dear Shariana Parker,</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:rgba(0,0,0,0.498039);"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:16pt; color:#ff0000;">Hello, this is Tola.</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:rgba(0,0,0,0.498039);"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:16pt; color:#ff0000;">For some time now, I’ve been making it a habit to send a letter of encouragement after each E-date I go on. I wanted to let you know how much I truly enjoyed spending time with you on this one.</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:rgba(0,0,0,0.498039);"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:16pt; color:#ff0000;">It was wonderful to see your heart for encouragement, worship, and shepherding. Those qualities are such a blessing to others and a reflection of God’s work in you.</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:rgba(0,0,0,0.498039);"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:16pt; color:#ff0000;">A passage that comes to mind is about being a son (or daughter) of encouragement. Acts 4:36–37 says:<br />&quot;Joseph, a Levite from Cyprus, whom the apostles called Barnabas (which means ‘son of encouragement’), sold a field he owned and brought the money and put it at the apostles’ feet.&quot;</span></p>
+<p align="center" style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:rgba(0,0,0,0.498039);"><span style=" font-family:'LetterSmithFont2', 'Papyrus'; font-size:16pt; color:#ff0000;">Just as Barnabas lifted others up and strengthened the church, I see that same spirit in you. Keep shining that light and building up the people around you—it’s making more of an impact than you may realize. </span></p></body></html></div>
+      </div>
+    </section>
+
+    <section class="slide" data-index="3" id="slide-3">
+      <img src="gallery/pages/back.png" alt="Final Backdrop" decoding="async">
+    </section>
+
+    <button id="prev" class="nav-button" type="button" title="Previous page" aria-label="Previous page">
+      <img src="gallery/controls/ppage.png" alt="" aria-hidden="true">
+    </button>
+    <button id="next" class="nav-button" type="button" title="Next page" aria-label="Next page">
+      <img src="gallery/controls/npage.png" alt="" aria-hidden="true">
+    </button>
+
+    <div id="viewer-actions" aria-label="Letter controls">
+      <div id="viewer-actions-left">
+        <button
+          id="restart-button"
+          class="hud-button viewer-action"
+          type="button"
+          title="Restart letter"
+          aria-label="Restart letter"
+        >Restart</button>
+        <button
+          id="mute-button"
+          class="hud-button viewer-action"
+          type="button"
+          title="Mute letter audio"
+          aria-label="Mute letter audio"
+          aria-pressed="false"
+        >Mute</button>
+      </div>
+    </div>
+
+    <button
+      id="open-text"
+      class="hud-button hud-button-icon"
+      type="button"
+      title="Show Message"
+      aria-label="Show message"
+      aria-controls="textWall"
+      aria-expanded="false"
+      aria-hidden="true"
+    >
+      <img src="gallery/controls/showmessageicon.png" alt="" aria-hidden="true" decoding="async">
+    </button>
+  </div>
+
+  <div id="volume-control" aria-hidden="true">
+    <button
+      id="volume-icon"
+      class="hud-button hud-button-icon"
+      type="button"
+      title="Volume"
+      aria-label="Toggle volume slider"
+      aria-controls="volume-slider"
+      aria-expanded="false"
+    >
+      <img id="volume-icon-img" src="gallery/controls/volon.png" alt="" aria-hidden="true" decoding="async">
+    </button>
+  </div>
+  </main>
+
+  <audio id="bg-music" preload="auto" playsinline></audio>
+  <audio id="bg-music-standby" preload="auto" playsinline></audio>
+
+  <script>
+    const INITIAL_VOLUME = 28;
+    const MUSIC_PLAYLIST = ["gallery/sounds/music.mp3"];
+    const MUSIC_CROSSFADE_MS = 0;
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

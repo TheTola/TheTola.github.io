@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engine of Future</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Preload opener assets only; the rest warm after the curtain starts -->
+  <link rel="preload" as="image" href="gallery/pages/cover.png" fetchpriority="high">
+  <link rel="preload" as="image" href="gallery/controls/cleft.png" fetchpriority="high">
+  <link rel="preload" as="image" href="gallery/controls/cright.png" fetchpriority="high">
+  <link rel="preload" as="audio" href="gallery/sounds/glissando.mp3">
+</head>
+
+<body>
+  <!-- Curtain intro -->
+  <div id="curtain-overlay" aria-hidden="false" role="dialog" aria-modal="true" aria-labelledby="begin-button">
+    <img id="curtain-left"  src="gallery/controls/cleft.png"  alt="" aria-hidden="true" decoding="async" fetchpriority="high">
+    <img id="curtain-right" src="gallery/controls/cright.png" alt="" aria-hidden="true" decoding="async" fetchpriority="high">
+    <button id="begin-button" type="button">Tap to Begin</button>
+  </div>
+
+  <!-- Main stage -->
+  <div id="slideshow" aria-hidden="true">
+    <!-- Page-turn overlay (JS sizes to the ACTIVE page-image rect) -->
+    <div id="turn" aria-hidden="true">
+      <div class="sheet sheet-front visible" id="sheetFront">
+        <img id="turnFrontImg" alt="" aria-hidden="true">
+      </div>
+      <div class="sheet sheet-back hidden" id="sheetBack">
+        <img id="turnBackImg" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div id="turnShadow" aria-hidden="true"></div>
+
+    <!-- Slides -->
+    <section class="slide active" data-index="0" id="slide-0">
+      <img src="gallery/pages/cover.png" alt="Cover Page" decoding="async" fetchpriority="high">
+    </section>
+
+    <section class="slide" data-index="1" id="slide-1">
+      <img src="gallery/pages/letter.png" alt="Main Letter" decoding="async">
+    </section>
+
+    <section class="slide" data-index="2" id="slide-2">
+      <img src="gallery/pages/wall.png" alt="Text Wall Background" decoding="async">
+      <button id="close-text" class="hud-button hud-button-close" type="button" title="Close Text" aria-label="Close message" aria-controls="textWall">&times;</button>
+      <div class="text-wall" id="textWall" role="dialog" aria-modal="false" aria-label="Message text" aria-hidden="true" tabindex="-1">
+        <div class="text-wall-content" id="textWallContent"><p align="center" style="margin-top:0.5em; margin-bottom:0.5em; background-color:rgba(0,0,0,0.556863)"><span style="font-family:'LetterSmithEmbeddedFont1', 'Parchment'; font-size:5.833rem">Dear Leilanie Chilado,</span></p>
+<p align="center" style="margin-top:0.5em; margin-bottom:0.5em; background-color:rgba(0,0,0,0.556863)"><span style="font-family:'LetterSmithEmbeddedFont2', 'Comic Sans MS', 'sans-serif'; font-size:1rem; color:#ffffff">Sorry this letter is a bit late. I’ve been a little overwhelmed for a while—catching up on schoolwork, finishing other letters like this one, and even helping another brother put one together. Still, I really wanted to follow through and write to encourage you after the e-date we had a few weeks ago.</span></p>
+<p align="center" style="margin-top:0; margin-bottom:0; line-height:24.84px; background-color:rgba(0,0,0,0.556863)"><span style="font-family:'LetterSmithEmbeddedFont2', 'Comic Sans MS', 'sans-serif'; font-size:1.083rem; font-weight:700; color:#e6ff00">Psalm 92:12–14</span></p>
+<p align="center" style="margin-top:0; margin-bottom:0; line-height:24.84px; background-color:rgba(0,0,0,0.556863)"><span style="font-family:'LetterSmithEmbeddedFont2', 'Comic Sans MS', 'sans-serif'; font-size:1rem; color:#f0ff8e">12 The righteous will flourish like a palm tree, they will grow like a cedar of Lebanon; 13 planted in the house of the Lord, they will flourish in the courts of our God. 14 They will still bear fruit in old age, they will stay fresh and green,</span></p>
+<p align="center" style="margin-top:0; margin-bottom:0; line-height:24.84px; background-color:rgba(0,0,0,0.556863)"><span style="font-family:'LetterSmithEmbeddedFont2', 'Comic Sans MS', 'sans-serif'; font-size:1rem; color:#ffffff">I wanted to encourage you that you are a capable and talented woman. You have real gifts—that you may not see their benefits clearly right now—but if you nurture them with patience and intention, they can grow into something meaningful and steady in your life. Sometimes the issue isn’t the thing itself—it’s the environment around it. Just like travel isn’t the problem if the stress actually comes from a difficult family, in the same way, certain interests or opportunities in your life may still hold good fruit if approached in a healthier place and season.</span></p>
+<p align="center" style="margin-top:0; margin-bottom:0; line-height:24.84px; background-color:rgba(0,0,0,0.556863)"><span style="font-family:'LetterSmithEmbeddedFont2', 'Comic Sans MS', 'sans-serif'; font-size:1rem; color:#ffffff">I want to encourage you to stay open. Keep planting seeds, even when you’re unsure which ones will grow. God often works through small, consistent steps rather than sudden clarity. As you keep investing in the right things—you’ll begin to see where real joy, purpose, and steadiness start to form.</span></p>
+<p align="center" style="margin-top:0; margin-bottom:0; line-height:24.84px; background-color:rgba(0,0,0,0.556863)"><span style="font-family:'LetterSmithEmbeddedFont2', 'Comic Sans MS', 'sans-serif'; font-size:1rem; color:#ffffff">You also carry a presence that can bring calm and joy to the people around you. That matters more than you might realize. The Kingdom needs people who don’t just do things, but who create warmth, peace, and encouragement wherever they are.</span></p>
+<p align="center" style="margin-top:0; margin-bottom:0; line-height:24.84px; background-color:rgba(0,0,0,0.556863)"><span style="font-family:'LetterSmithEmbeddedFont2', 'Comic Sans MS', 'sans-serif'; font-size:1rem; color:#ffffff">I hope this reminds you that your life has direction, your gifts have purpose, and your future has room to flourish.</span></p>
+<p align="center" style="margin-top:0; margin-bottom:0; line-height:24.84px; background-color:rgba(0,0,0,0.556863)"><span style="font-family:'LetterSmithEmbeddedFont2', 'Comic Sans MS', 'sans-serif'; font-size:1rem; color:#ffffff">— The Tola</span></p>
+<p style="margin-top:0; margin-bottom:0"><br /></p></div>
+      </div>
+    </section>
+
+    <section class="slide" data-index="3" id="slide-3">
+      <img src="gallery/pages/back.png" alt="Final Backdrop" decoding="async">
+    </section>
+
+    <!-- Navigation -->
+    <button id="prev" class="nav-button" type="button" title="Previous page" aria-label="Previous page">
+      <img src="gallery/controls/ppage.png" alt="" aria-hidden="true">
+    </button>
+    <button id="next" class="nav-button" type="button" title="Next page" aria-label="Next page">
+      <img src="gallery/controls/npage.png" alt="" aria-hidden="true">
+    </button>
+
+    <div id="progress" aria-live="polite">Page 1 of 4</div>
+
+    <!-- Show message (reopen) icon -->
+    <button
+      id="open-text"
+      class="hud-button hud-button-icon"
+      type="button"
+      title="Show Message"
+      aria-label="Show message"
+      aria-controls="textWall"
+      aria-expanded="false"
+      aria-hidden="true"
+    >
+      <img src="gallery/controls/showmessageicon.png" alt="" aria-hidden="true" decoding="async">
+    </button>
+  </div>
+
+  <!-- Volume control (slider injected by JS) -->
+  <div id="volume-control" aria-hidden="true">
+    <button
+      id="volume-icon"
+      class="hud-button hud-button-icon"
+      type="button"
+      title="Volume"
+      aria-label="Toggle volume slider"
+      aria-controls="volume-slider"
+      aria-expanded="false"
+    >
+      <img id="volume-icon-img" src="gallery/controls/volon.png" alt="" aria-hidden="true" decoding="async">
+    </button>
+  </div>
+
+  <!-- Background music -->
+  <audio id="bg-music" src="gallery/sounds/music.mp3" preload="auto" loop playsinline></audio>
+
+  <!-- Injected constant (0–100 int, at build time) -->
+  <script>
+    const INITIAL_VOLUME = 5;
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

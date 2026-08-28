@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "mode": "playlist",
+  "crossfade_ms": 1000,
+  "tracks": [
+    {
+      "filename": "music.mp3",
+      "display_title": "It Is Well With My Soul Audrey Assad",
+      "duration_seconds": 250.89161,
+      "content_hash": "2c7d2fc74efafec1908bdfe0d664a2887b8d3b0e29e2691bf96229b658578278",
+      "original_name": "It Is Well With My Soul - Audrey Assad.mp3"
+    },
+    {
+      "filename": "music-002.mp3",
+      "display_title": "Sung Amazing Grace",
+      "duration_seconds": 179.562667,
+      "content_hash": "2600b79893c9e3820490d45dbb310d378b360ffef3498abbabd8bdd1bea1b32a",
+      "original_name": "Sung Amazing Grace.mp3"
+    },
+    {
+      "filename": "music-003.mp3",
+      "display_title": "I Am a Poor Wayfaring Stranger",
+      "duration_seconds": 237.569875,
+      "content_hash": "e951582e64c1f3da8f7f7a0cd96a0b23e759072c81c628b666c999c1fee0d748",
+      "original_name": "I Am a Poor Wayfaring Stranger.mp3"
+    },
+    {
+      "filename": "music-004.mp3",
+      "display_title": "Sanctuary performed by Maraia Lastra",
+      "duration_seconds": 179.722458,
+      "content_hash": "f12abb092cb7dde3eae09c697c9347428fbc7e07af9f41466eaa5fd64bf9f600",
+      "original_name": "Sanctuary performed by Maraia Lastra.mp3"
+    },
+    {
+      "filename": "music-005.mp3",
+      "display_title": "Clair Obscur Expedition 33",
+      "duration_seconds": 169.923628,
+      "content_hash": "7463e94a462c05177637ba4cb2928c7d99743c0731a8d05c3730e9ddf07325d2",
+      "original_name": "Clair Obscur Expedition 33.mp3"
+    }
+  ]
+}
