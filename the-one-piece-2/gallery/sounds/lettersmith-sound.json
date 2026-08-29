@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "mode": "single",
+  "playlist_expanded": true,
+  "selected_track_index": 0,
+  "crossfade_ms": 0,
+  "tracks": [
+    {
+      "filename": "music.mp3",
+      "display_title": "NIKA Sun God One Piece Song",
+      "duration_seconds": 252.981406,
+      "content_hash": "fa144b77b99a918531fde5b6b9fa201e1f9c1d02f60a71cf19349cc8e452edf1",
+      "original_name": "NIKA Sun God - One Piece Song.mp3"
+    }
+  ]
+}
