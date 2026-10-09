@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "key": "cover",
+      "kind": "cover"
+    },
+    {
+      "key": "letter",
+      "kind": "letter"
+    },
+    {
+      "key": "back",
+      "kind": "back"
+    }
+  ]
+}
