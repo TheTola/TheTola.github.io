@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'nonce-w2htRGraM-Z_SAyHdc8zcZkjWrv8vfRk'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; worker-src 'none'">
+  <title>The Good shepherdess</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preload" as="image" href="gallery/pages/cover.png" fetchpriority="high">
+  <link rel="preload" as="image" href="gallery/controls/cleft.png" fetchpriority="high">
+  <link rel="preload" as="image" href="gallery/controls/cright.png" fetchpriority="high">
+  <link rel="preload" as="image" href="gallery/controls/bannerman.png">
+  <link rel="preload" as="audio" href="gallery/sounds/glissando.mp3">
+  <link rel="preload" as="audio" href="gallery/sounds/music.mp3" type="audio/mpeg">
+</head>
+
+<body>
+  <main id="letter-preview">
+  <div id="curtain-overlay" aria-hidden="false" role="button" tabindex="0" aria-labelledby="begin-button">
+    <img id="curtain-left"  src="gallery/controls/cleft.png"  alt="" aria-hidden="true" decoding="async" fetchpriority="high">
+    <img id="curtain-right" src="gallery/controls/cright.png" alt="" aria-hidden="true" decoding="async" fetchpriority="high">
+    <span id="begin-button" contenteditable="false">Tap to Begin</span>
+  </div>
+  <div
+    id="title-banner"
+    aria-hidden="true"
+    style="--title-banner-text-rgb:88,208,186"
+  >
+    <img
+      id="title-banner-art"
+      src="gallery/controls/bannerman.png"
+      alt=""
+      aria-hidden="true"
+      decoding="async"
+    >
+    <span>The Good shepherdess</span>
+  </div>
+
+  <button
+    id="fullscreen-button"
+    inert
+    class="hud-button viewer-action"
+    type="button"
+    title="Enter fullscreen"
+    aria-label="Enter fullscreen"
+  >Fullscreen</button>
+
+  <div id="slideshow" aria-hidden="true">
+    <div id="turn" aria-hidden="true">
+      <div class="sheet sheet-front visible" id="sheetFront">
+        <img id="turnFrontImg" alt="">
+      </div>
+    </div>
+    <div id="turnShadow" aria-hidden="true"></div>
+
+    <section class="slide active" data-index="0" data-page-type="cover" id="slide-0">
+      <img src="gallery/pages/cover.png" alt="Cover" decoding="async" fetchpriority="high">
+    </section>
+
+    <section class="slide" data-index="1" data-page-type="wall" id="slide-1">
+      <img src="gallery/pages/wall.png" alt="Letter" decoding="async">
+    </section>
+
+    <section class="slide" data-index="2" data-page-type="back" id="slide-2">
+      <img src="gallery/pages/back.png" alt="End Page" decoding="async">
+    </section>
+      <div class="text-wall" id="textWall" role="dialog" aria-modal="false" aria-label="Message text" aria-hidden="true" tabindex="-1" style="--message-overlay-rgb:245,235,210;--message-overlay-center-rgb:248,240,220;--message-overlay-edge-rgb:241,228,198;--message-overlay-opacity:0.680;--message-overlay-surface-opacity:0.680;--message-overlay-border:rgba(104,76,43,.18);--message-overlay-inner-border:rgba(104,76,43,.10);--message-overlay-shadow:0 18px 52px rgba(0,0,0,.20),inset 0 1px 0 rgba(255,255,255,.32);--message-ink:#2b1c12;--adaptive-max-lightness:0.030;--wall-fade-ms:900ms;">
+        <button id="close-text" class="hud-button hud-button-close" type="button" title="Close Text" aria-label="Close message" aria-controls="textWall">&times;</button>
+        <div class="text-wall-content" id="textWallContent"><style type="text/css">.lettersmith-defaults p,.lettersmith-defaults li{white-space:pre-wrap}.lettersmith-defaults hr{height:1px;border-width:0}.lettersmith-defaults li.unchecked::marker{content:"\2610"}.lettersmith-defaults li.checked::marker{content:"\2612"}</style><div class="lettersmith-defaults"><!-- lettersmith-style-state:v2:eyJibG9ja3MiOlt7Im92ZXJyaWRlcyI6W10sInN0eWxlIjoidGl0bGUifSx7Im92ZXJyaWRlcyI6W10sInN0eWxlIjpudWxsfSx7Im92ZXJyaWRlcyI6W10sInN0eWxlIjpudWxsfSx7Im92ZXJyaWRlcyI6W10sInN0eWxlIjpudWxsfSx7Im92ZXJyaWRlcyI6W10sInN0eWxlIjpudWxsfSx7Im92ZXJyaWRlcyI6W10sInN0eWxlIjpudWxsfV0sImRlZmluaXRpb25zIjp7InN0eWxlcyI6eyJoZWFkaW5nXzEiOnsiZm9udF9jb2xvciI6IiMyYjFjMTIiLCJmb250X2ZhbWlseSI6IlBhcHlydXMiLCJmb250X3NpemUiOjI0LjAsImZvbnRfd2VpZ2h0Ijo3MDAsIml0YWxpYyI6ZmFsc2UsInBhcmFncmFwaCI6bnVsbCwic3RyaWtldGhyb3VnaCI6ZmFsc2UsInVuZGVybGluZSI6ZmFsc2V9LCJoZWFkaW5nXzIiOnsiZm9udF9jb2xvciI6IiMyYjFjMTIiLCJmb250X2ZhbWlseSI6IlBhcHlydXMiLCJmb250X3NpemUiOjIwLjAsImZvbnRfd2VpZ2h0Ijo3MDAsIml0YWxpYyI6ZmFsc2UsInBhcmFncmFwaCI6bnVsbCwic3RyaWtldGhyb3VnaCI6ZmFsc2UsInVuZGVybGluZSI6ZmFsc2V9LCJoZWFkaW5nXzMiOnsiZm9udF9jb2xvciI6IiMyYjFjMTIiLCJmb250X2ZhbWlseSI6IlBhcHlydXMiLCJmb250X3NpemUiOjE4LjAsImZvbnRfd2VpZ2h0Ijo3MDAsIml0YWxpYyI6ZmFsc2UsInBhcmFncmFwaCI6bnVsbCwic3RyaWtldGhyb3VnaCI6ZmFsc2UsInVuZGVybGluZSI6ZmFsc2V9LCJub3JtYWxfdGV4dCI6eyJmb250X2NvbG9yIjoiIzJiMWMxMiIsImZvbnRfZmFtaWx5IjoiUGFweXJ1cyIsImZvbnRfc2l6ZSI6MTYuMCwiZm9udF93ZWlnaHQiOjQwMCwiaXRhbGljIjpmYWxzZSwicGFyYWdyYXBoIjpudWxsLCJzdHJpa2V0aHJvdWdoIjpmYWxzZSwidW5kZXJsaW5lIjpmYWxzZX0sInN1YnRpdGxlIjp7ImZvbnRfY29sb3IiOiIjMmIxYzEyIiwiZm9udF9mYW1pbHkiOiJQYXB5cnVzIiwiZm9udF9zaXplIjoyMC4wLCJmb250X3dlaWdodCI6NDAwLCJpdGFsaWMiOnRydWUsInBhcmFncmFwaCI6bnVsbCwic3RyaWtldGhyb3VnaCI6ZmFsc2UsInVuZGVybGluZSI6ZmFsc2V9LCJ0aXRsZSI6eyJmb250X2NvbG9yIjoiIzJiMWMxMiIsImZvbnRfZmFtaWx5IjoiUGFweXJ1cyIsImZvbnRfc2l6ZSI6MjguMCwiZm9udF93ZWlnaHQiOjcwMCwiaXRhbGljIjpmYWxzZSwicGFyYWdyYXBoIjpudWxsLCJzdHJpa2V0aHJvdWdoIjpmYWxzZSwidW5kZXJsaW5lIjpmYWxzZX19LCJ2ZXJzaW9uIjoyfSwic2NoZW1hX3ZlcnNpb24iOjJ9 -->
+
+<!-- lettersmith-message:v2 -->
+
+<p style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px"><span style="font-size:28pt; font-weight:700; color:#2b1c12">Dear </span><a href="ultralink:Jennifer%0ACornish%20%2F%20Welsh%0AMeaning%3A%20Commonly%20interpreted%20as%20%22white%20phantom%2C%22%20%22fair%20one%2C%22%20or%20%22white%20wave.%22%0AJennifer%20is%20the%20Cornish%20form%20of%20Guinevere%2C%20derived%20from%20Welsh%20Gwenhwyfar.%20The%20older%20meaning%20is%20generally%20reconstructed%20as%20%22white%20phantom%22%20or%20%22fair%20magical%20being.%22%0A%0AJennifer%20Cruz%20Hernandez%20%E2%80%94%20Symbolic%20interpretation%0AA%20fair%20one%2C%20bearing%20the%20cross%2C%20descended%20from%20a%20courageous%20traveler.%0AThis%20combines%20the%20name%20meanings%20poetically%20rather%20than%20giving%20a%20literal%20translation." style="white-space:normal"><span style="font-size:28pt; font-weight:700; font-style:italic; color:#00aaff">Jennifer</span></a><span style="font-size:28pt; font-weight:700; color:#2b1c12"> </span><a href="ultralink:Cruz%0ASpanish%20%2F%20Portuguese%0AMeaning%3A%20The%20Cross.%0ADerived%20from%20Latin%20crux%2C%20meaning%20cross.%20As%20a%20surname%2C%20it%20could%20describe%20someone%20living%20near%20a%20cross%20or%20originate%20from%20a%20place%20named%20Cruz.%20It%20also%20has%20Christian%20religious%20associations." style="white-space:normal"><span style="font-size:28pt; font-weight:700; font-style:italic; color:#aa55ff">Cruz</span></a><span style="font-size:28pt; font-weight:700; color:#2b1c12"> </span><a href="ultralink:Hernandez%20%28Hern%C3%A1ndez%29%0ASpanish%20%2F%20Germanic%20roots%0AMeaning%3A%20Son%20of%20Hernando.%0AHernando%20is%20related%20to%20Fernando%20or%20Ferdinand%2C%20whose%20Germanic%20roots%20are%20commonly%20interpreted%20in%20terms%20of%20courageous%20or%20daring%20journeys.%0AThe%20Spanish%20surname%20ending%20-ez%20indicates%20descent%2C%20traditionally%20%22son%20of.%22" style="white-space:normal"><span style="font-size:28pt; font-weight:700; font-style:italic; color:#ff1553">Hernandez</span></a><span style="font-size:28pt; font-weight:700; color:#2b1c12">,</span></p>
+<p style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px">Hey <a href="ultralink:Jennifer%0ACornish%20%2F%20Welsh%0AMeaning%3A%20Commonly%20interpreted%20as%20%22white%20phantom%2C%22%20%22fair%20one%2C%22%20or%20%22white%20wave.%22%0AJennifer%20is%20the%20Cornish%20form%20of%20Guinevere%2C%20derived%20from%20Welsh%20Gwenhwyfar.%20The%20older%20meaning%20is%20generally%20reconstructed%20as%20%22white%20phantom%22%20or%20%22fair%20magical%20being.%22%0A%0AJennifer%20Cruz%20Hernandez%20%E2%80%94%20Symbolic%20interpretation%0AA%20fair%20one%2C%20bearing%20the%20cross%2C%20descended%20from%20a%20courageous%20traveler.%0AThis%20combines%20the%20name%20meanings%20poetically%20rather%20than%20giving%20a%20literal%20translation." style="white-space:normal"><span style="font-style:italic; color:#00aaff">Jennifer</span></a>! I hope you're doing well and that life has been treating you kindly.</p>
+<p style="margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px">I just wanted to take a moment to send a little encouragement your way. I hope that wherever life takes you, you continue to find joy in the little things, strength in difficult moments, and peace in knowing that God is always with you.</p>
+<p style="margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px">May God continue to guide your steps, bless the work of your hands, and fill your heart with patience, wisdom, and compassion. Never underestimate the difference that a little kindness can make in someone's life or the impact you can have simply by being there for others.</p>
+<p style="margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px">Whatever challenges or opportunities lie ahead, I pray that you continue to grow in faith, find fulfillment in all that you do, and trust in the path God has prepared for you.</p>
+<p style="margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px"><a href="ultralink:%E2%80%94%20Psalm%2023%3A1" style="white-space:normal"><span style="font-weight:700; font-style:italic; color:#643f11">“The Lord is my shepherd, I lack nothing.”</span></a></p></div></div>
+      </div>
+    <button id="prev" class="nav-button" type="button" title="Previous page" aria-label="Previous page">
+      <img src="gallery/controls/ppage.png" alt="" aria-hidden="true">
+    </button>
+    <button id="next" class="nav-button" type="button" title="Next page" aria-label="Next page">
+      <img src="gallery/controls/npage.png" alt="" aria-hidden="true">
+    </button>
+
+    <div id="viewer-actions" aria-label="Letter controls">
+      <div id="viewer-actions-left">
+        <button
+          id="restart-button"
+          class="hud-button viewer-action"
+          type="button"
+          title="Restart letter"
+          aria-label="Restart letter"
+        >Restart</button>
+        <button
+          id="mute-button"
+          class="hud-button viewer-action"
+          type="button"
+          title="Mute letter audio"
+          aria-label="Mute letter audio"
+          aria-pressed="false"
+        >Mute</button>
+      </div>
+    </div>
+
+    <button
+      id="open-text"
+      class="hud-button hud-button-icon"
+      type="button"
+      title="Show Message"
+      aria-label="Show message"
+      aria-controls="textWall"
+      aria-expanded="false"
+      aria-hidden="true"
+    >
+      <img src="gallery/controls/showmessageicon.png" alt="" aria-hidden="true" decoding="async">
+    </button>
+  </div>
+
+  <div id="volume-control" aria-hidden="true">
+    <button
+      id="volume-icon"
+      class="hud-button hud-button-icon"
+      type="button"
+      title="Volume"
+      aria-label="Toggle volume slider"
+      aria-controls="volume-slider"
+      aria-expanded="false"
+    >
+      <img id="volume-icon-img" src="gallery/controls/volon.png" alt="" aria-hidden="true" decoding="async">
+    </button>
+  </div>
+  </main>
+
+  <audio id="bg-music" preload="auto" playsinline></audio>
+  <audio id="bg-music-standby" preload="auto" playsinline></audio>
+
+  <script nonce="w2htRGraM-Z_SAyHdc8zcZkjWrv8vfRk">
+    const INITIAL_VOLUME = 23;
+    const MUSIC_PLAYLIST = ["gallery/sounds/music.mp3"];
+    const MUSIC_CROSSFADE_MS = 0;
+    const IMAGE_ANIMATIONS = {};
+    const HAS_MESSAGE = true;
+  </script>
+
+  <script nonce="w2htRGraM-Z_SAyHdc8zcZkjWrv8vfRk" src="script.js"></script>
+</body>
+</html>
