@@ -1,0 +1,540 @@
+{
+  "format": "lettersmith.project",
+  "schema_version": 3,
+  "project_id": "c73eb44e-6fe1-425c-819d-92684d191fb9",
+  "revision": 6,
+  "pages": [
+    {
+      "id": "cover",
+      "type": "cover",
+      "name": "",
+      "artwork": {
+        "asset": "a/2217c7edeac1a8eb51360c55949efed8.png",
+        "media_type": "image/png",
+        "placement": {},
+        "animation": {}
+      },
+      "prompt": {
+        "directions": "",
+        "overrides": {},
+        "template_id": "cover",
+        "resolved_components": {},
+        "text": null,
+        "options": {
+          "approved_image": false
+        },
+        "stale": false
+      },
+      "message": null,
+      "design_overrides": {},
+      "recovery": {
+        "legacy_key": "cover",
+        "legacy_type": "cover",
+        "legacy_page": {
+          "key": "cover",
+          "kind": "cover"
+        },
+        "legacy_image_record": {
+          "asset_type": "static",
+          "is_animated_gif": false,
+          "source_file": "cover.png",
+          "preview_file": "cover.png"
+        }
+      },
+      "revision": 1,
+      "preview_stale": true
+    },
+    {
+      "id": "letter",
+      "type": "letter",
+      "name": "",
+      "artwork": {
+        "asset": "a/ff4f0b12a5309b83bf08d88bbaf0f22b.png",
+        "media_type": "image/png",
+        "placement": {},
+        "animation": {}
+      },
+      "prompt": {
+        "directions": "",
+        "overrides": {},
+        "template_id": "wall",
+        "resolved_components": {},
+        "text": null,
+        "options": {
+          "approved_image": false
+        },
+        "stale": false
+      },
+      "message": {
+        "format": "html",
+        "html": "<style type=\"text/css\">.lettersmith-defaults p,.lettersmith-defaults li{white-space:pre-wrap}.lettersmith-defaults hr{height:1px;border-width:0}.lettersmith-defaults li.unchecked::marker{content:\"\\2610\"}.lettersmith-defaults li.checked::marker{content:\"\\2612\"}</style><div class=\"lettersmith-defaults\"><!-- lettersmith-style-state:v2:eyJibG9ja3MiOlt7Im92ZXJyaWRlcyI6W10sInN0eWxlIjoidGl0bGUifSx7Im92ZXJyaWRlcyI6W10sInN0eWxlIjpudWxsfSx7Im92ZXJyaWRlcyI6W10sInN0eWxlIjpudWxsfSx7Im92ZXJyaWRlcyI6W10sInN0eWxlIjpudWxsfSx7Im92ZXJyaWRlcyI6W3siZW5kIjo1NSwibWFzayI6WyJmb250X2NvbG9yIl0sInN0YXJ0IjowfV0sInN0eWxlIjpudWxsfV0sImRlZmluaXRpb25zIjp7InN0eWxlcyI6eyJoZWFkaW5nXzEiOnsiZm9udF9jb2xvciI6IiNmMWVlZTgiLCJmb250X2ZhbWlseSI6IlBhcHlydXMiLCJmb250X3NpemUiOjI0LjAsImZvbnRfd2VpZ2h0Ijo3MDAsIml0YWxpYyI6ZmFsc2UsInBhcmFncmFwaCI6bnVsbCwic3RyaWtldGhyb3VnaCI6ZmFsc2UsInVuZGVybGluZSI6ZmFsc2V9LCJoZWFkaW5nXzIiOnsiZm9udF9jb2xvciI6IiNmMWVlZTgiLCJmb250X2ZhbWlseSI6IlBhcHlydXMiLCJmb250X3NpemUiOjIwLjAsImZvbnRfd2VpZ2h0Ijo3MDAsIml0YWxpYyI6ZmFsc2UsInBhcmFncmFwaCI6bnVsbCwic3RyaWtldGhyb3VnaCI6ZmFsc2UsInVuZGVybGluZSI6ZmFsc2V9LCJoZWFkaW5nXzMiOnsiZm9udF9jb2xvciI6IiNmMWVlZTgiLCJmb250X2ZhbWlseSI6IlBhcHlydXMiLCJmb250X3NpemUiOjE4LjAsImZvbnRfd2VpZ2h0Ijo3MDAsIml0YWxpYyI6ZmFsc2UsInBhcmFncmFwaCI6bnVsbCwic3RyaWtldGhyb3VnaCI6ZmFsc2UsInVuZGVybGluZSI6ZmFsc2V9LCJub3JtYWxfdGV4dCI6eyJmb250X2NvbG9yIjoiI2YxZWVlOCIsImZvbnRfZmFtaWx5IjoiUGFweXJ1cyIsImZvbnRfc2l6ZSI6MTYuMCwiZm9udF93ZWlnaHQiOjQwMCwiaXRhbGljIjpmYWxzZSwicGFyYWdyYXBoIjpudWxsLCJzdHJpa2V0aHJvdWdoIjpmYWxzZSwidW5kZXJsaW5lIjpmYWxzZX0sInN1YnRpdGxlIjp7ImZvbnRfY29sb3IiOiIjZjFlZWU4IiwiZm9udF9mYW1pbHkiOiJQYXB5cnVzIiwiZm9udF9zaXplIjoyMC4wLCJmb250X3dlaWdodCI6NDAwLCJpdGFsaWMiOnRydWUsInBhcmFncmFwaCI6bnVsbCwic3RyaWtldGhyb3VnaCI6ZmFsc2UsInVuZGVybGluZSI6ZmFsc2V9LCJ0aXRsZSI6eyJmb250X2NvbG9yIjoiI2YxZWVlOCIsImZvbnRfZmFtaWx5IjoiUGFweXJ1cyIsImZvbnRfc2l6ZSI6MjguMCwiZm9udF93ZWlnaHQiOjcwMCwiaXRhbGljIjpmYWxzZSwicGFyYWdyYXBoIjpudWxsLCJzdHJpa2V0aHJvdWdoIjpmYWxzZSwidW5kZXJsaW5lIjpmYWxzZX19LCJ2ZXJzaW9uIjoyfSwic2NoZW1hX3ZlcnNpb24iOjJ9 -->\n\n<!-- lettersmith-message:v2 -->\n\n<p align=\"center\" style=\"margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px\"><span style=\"font-size:28pt; font-weight:700; color:#f1eee8\">Dear Amani Hill,</span></p>\n<p style=\"margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px\"><br></p>\n<p style=\"margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px\">Hey Amani, it's been a while! I hope all is well with you and that life has been treating you kindly. I just wanted to take a moment to send you some encouragement and wish you the very best in whatever you've been up to.</p>\n<p style=\"margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px\">I pray that God continues to guide you, bless you, and give you strength through whatever comes your way. Keep moving forward, stay encouraged, and never forget that with God, all things are possible.</p>\n<p align=\"center\" style=\"margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px\"><a href=\"ultralink:%E2%80%94%20Philippians%204%3A13\" style=\"white-space:normal\"><span style=\"font-weight:700; font-style:italic; color:#fffb82\">“I can do all this through him who gives me strength.”</span></a><span style=\"font-weight:700; color:#fffb82\"> </span><span style=\"font-weight:700\"><br></span></p></div>",
+        "resources": [
+          "gallery/user/message/message.png",
+          "gallery/user/message/revisions/20261013-190442-721281__manual-save.html"
+        ],
+        "layout": {},
+        "settings": {}
+      },
+      "design_overrides": {},
+      "recovery": {
+        "legacy_key": "letter",
+        "legacy_type": "wall",
+        "legacy_page": {
+          "key": "letter",
+          "kind": "wall"
+        },
+        "legacy_image_record": {
+          "asset_type": "static",
+          "is_animated_gif": false,
+          "source_file": "letter.png",
+          "preview_file": "letter.png"
+        }
+      },
+      "revision": 1,
+      "preview_stale": true
+    },
+    {
+      "id": "back",
+      "type": "end_page",
+      "name": "",
+      "artwork": {
+        "asset": "a/349ca580a84ba0aa66c1c9603ccdf782.png",
+        "media_type": "image/png",
+        "placement": {},
+        "animation": {}
+      },
+      "prompt": {
+        "directions": "",
+        "overrides": {},
+        "template_id": "back",
+        "resolved_components": {},
+        "text": null,
+        "options": {
+          "approved_image": false
+        },
+        "stale": false
+      },
+      "message": null,
+      "design_overrides": {},
+      "recovery": {
+        "legacy_key": "back",
+        "legacy_type": "back",
+        "legacy_page": {
+          "key": "back",
+          "kind": "back"
+        },
+        "legacy_image_record": {
+          "asset_type": "static",
+          "is_animated_gif": false,
+          "source_file": "back.png",
+          "preview_file": "back.png"
+        }
+      },
+      "revision": 1,
+      "preview_stale": true
+    }
+  ],
+  "metadata": {
+    "project_id": "c73eb44e-6fe1-425c-819d-92684d191fb9",
+    "recipient_id": "2e3d6cff-5d48-48e8-aecc-b7dcac93522a",
+    "recipient_name": "Amani Hill",
+    "recipient_title": "Valley & Shepard",
+    "project_created_at": "2026-09-30T01:22:33+00:00"
+  },
+  "shared_settings": {
+    "music_volume": 23,
+    "starting_volume": 23,
+    "recipient_title": "Valley & Shepard",
+    "recipient_name": "Amani Hill",
+    "published_page_url": "",
+    "message_overlay_preset": "black",
+    "message_overlay_opacity": 91,
+    "curtain_style": "average_color",
+    "project_id": "c73eb44e-6fe1-425c-819d-92684d191fb9",
+    "required_features": [],
+    "recipient_id": "2e3d6cff-5d48-48e8-aecc-b7dcac93522a",
+    "published_public_path": "",
+    "published_at": "",
+    "published_expires_at": "",
+    "publication_provider": "",
+    "published_source_fingerprint": "",
+    "publication_verified": false,
+    "published_github_owner": "",
+    "published_github_repository": "",
+    "project_created_at": "2026-09-30T01:22:33+00:00",
+    "project_published_at": ""
+  },
+  "prompt_settings": {
+    "version": 6,
+    "type": "",
+    "subject": "",
+    "color": "",
+    "global": "",
+    "wall": "",
+    "checks": {
+      "black": false,
+      "white": false,
+      "frame": false,
+      "vignette": false,
+      "polaroid": false,
+      "cardshadow": false,
+      "real": false,
+      "paint": false,
+      "minimal": false,
+      "forbid_text": false,
+      "clean_composition": false,
+      "strong_focal_point": false,
+      "dynamic_angle": false,
+      "cinematic_framing": false,
+      "close_up_focus": false,
+      "full_body_view": false,
+      "wide_scene": false,
+      "simplified_details": false
+    },
+    "generated_input_signature": ""
+  },
+  "sound": {
+    "version": 2,
+    "mode": "single",
+    "single_track_id": "2600b79893c9e382",
+    "playlist": [],
+    "playlist_expanded": true,
+    "selected_track_id": "2600b79893c9e382",
+    "tracks": [
+      {
+        "track_id": "2600b79893c9e382",
+        "asset": "audio/2600b79893c9e3820490d45dbb310d37.mp3",
+        "sha256": "2600b79893c9e3820490d45dbb310d378b360ffef3498abbabd8bdd1bea1b32a",
+        "display_title": "Sung Amazing Grace",
+        "original_name": "Sung Amazing Grace.mp3",
+        "duration_seconds": 179.562667
+      }
+    ]
+  },
+  "presentation": {},
+  "publication": {
+    "published_page_url": "",
+    "published_public_path": "",
+    "published_at": "",
+    "published_expires_at": "",
+    "publication_provider": "",
+    "published_source_fingerprint": "",
+    "publication_verified": false,
+    "published_github_owner": "",
+    "published_github_repository": ""
+  },
+  "recovery": {
+    "migration": {
+      "source_format": "legacy_active",
+      "source_schema": {
+        "save": null,
+        "identity": null,
+        "layout": 1
+      },
+      "warnings": [],
+      "identities": [
+        {
+          "role": "project",
+          "source_id": "c73eb44e-6fe1-425c-819d-92684d191fb9",
+          "id": "c73eb44e-6fe1-425c-819d-92684d191fb9",
+          "action": "preserved"
+        },
+        {
+          "role": "page",
+          "source_id": "cover",
+          "id": "cover",
+          "action": "preserved"
+        },
+        {
+          "role": "page",
+          "source_id": "letter",
+          "id": "letter",
+          "action": "preserved"
+        },
+        {
+          "role": "page",
+          "source_id": "back",
+          "id": "back",
+          "action": "preserved"
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "legacy_source": {
+      "metadata": {
+        "project_id": "c73eb44e-6fe1-425c-819d-92684d191fb9",
+        "recipient_id": "2e3d6cff-5d48-48e8-aecc-b7dcac93522a",
+        "recipient_name": "Amani Hill",
+        "recipient_title": "Valley & Shepard",
+        "project_created_at": "2026-09-30T01:22:33+00:00"
+      },
+      "settings": {
+        "music_volume": 23,
+        "starting_volume": 23,
+        "recipient_title": "Valley & Shepard",
+        "recipient_name": "Amani Hill",
+        "published_page_url": "",
+        "message_overlay_preset": "black",
+        "message_overlay_opacity": 68,
+        "curtain_style": "average_color",
+        "project_id": "c73eb44e-6fe1-425c-819d-92684d191fb9",
+        "required_features": [],
+        "recipient_id": "2e3d6cff-5d48-48e8-aecc-b7dcac93522a",
+        "published_public_path": "",
+        "published_at": "",
+        "published_expires_at": "",
+        "publication_provider": "",
+        "published_source_fingerprint": "",
+        "publication_verified": false,
+        "published_github_owner": "",
+        "published_github_repository": "",
+        "project_created_at": "2026-09-30T01:22:33+00:00",
+        "project_published_at": ""
+      },
+      "page_layout": [
+        {
+          "key": "cover",
+          "kind": "cover"
+        },
+        {
+          "key": "letter",
+          "kind": "wall"
+        },
+        {
+          "key": "back",
+          "kind": "back"
+        }
+      ],
+      "page_layout_version": 1,
+      "images": {
+        "cover": {
+          "asset_type": "static",
+          "is_animated_gif": false,
+          "source_file": "cover.png",
+          "preview_file": "cover.png"
+        },
+        "letter": {
+          "asset_type": "static",
+          "is_animated_gif": false,
+          "source_file": "letter.png",
+          "preview_file": "letter.png"
+        },
+        "back": {
+          "asset_type": "static",
+          "is_animated_gif": false,
+          "source_file": "back.png",
+          "preview_file": "back.png"
+        }
+      },
+      "asset_prefix": "gallery/user/pages",
+      "message_html": null,
+      "message_resources": [
+        "gallery/user/message/message.png"
+      ],
+      "resources": [
+        "gallery/user/message/message.png",
+        "audio/198499de2258e95e59d57ebda8c2ce17.mp3"
+      ],
+      "asset_signatures": {
+        "cover": "2217c7edeac1a8eb51360c55949efed845df069a678a7324dec59211743f8922",
+        "letter": "ff4f0b12a5309b83bf08d88bbaf0f22b623c842058fe8bb47e3d0ee78285db34",
+        "back": "349ca580a84ba0aa66c1c9603ccdf782f541bf3da2145a9cf20f933237780ff0"
+      },
+      "prompt_writer_state": {
+        "version": 6,
+        "type": "",
+        "subject": "",
+        "color": "",
+        "global": "",
+        "cover": "",
+        "letter": "",
+        "wall": "",
+        "back": "",
+        "checks": {
+          "black": false,
+          "white": false,
+          "frame": false,
+          "vignette": false,
+          "polaroid": false,
+          "cardshadow": false,
+          "real": false,
+          "paint": false,
+          "minimal": false,
+          "forbid_text": false,
+          "clean_composition": false,
+          "strong_focal_point": false,
+          "dynamic_angle": false,
+          "cinematic_framing": false,
+          "close_up_focus": false,
+          "full_body_view": false,
+          "wide_scene": false,
+          "simplified_details": false
+        },
+        "resolved_instructions": {},
+        "generated_prompts": {},
+        "generated_input_signature": ""
+      },
+      "sound": {
+        "version": 2,
+        "mode": "single",
+        "single_track_id": "198499de2258e95e",
+        "playlist": [],
+        "playlist_expanded": true,
+        "selected_track_id": "198499de2258e95e",
+        "tracks": [
+          {
+            "track_id": "198499de2258e95e",
+            "asset": "audio/198499de2258e95e59d57ebda8c2ce17.mp3",
+            "sha256": "198499de2258e95e59d57ebda8c2ce17779a886e94b06458d38beffc63bcfe05",
+            "display_title": "Clair de Lune",
+            "original_name": "Clair de Lune.mp3",
+            "duration_seconds": 311.217052
+          }
+        ]
+      }
+    },
+    "legacy_source_format": "legacy_active",
+    "resource_files": [
+      "gallery/user/message/message.png",
+      "audio/198499de2258e95e59d57ebda8c2ce17.mp3",
+      "audio/2600b79893c9e3820490d45dbb310d37.mp3",
+      "gallery/user/message/revisions/20261013-190442-721281__manual-save.html"
+    ],
+    "legacy_workspace_snapshot": {
+      "metadata": {
+        "project_id": "c73eb44e-6fe1-425c-819d-92684d191fb9",
+        "recipient_id": "2e3d6cff-5d48-48e8-aecc-b7dcac93522a",
+        "recipient_name": "Amani Hill",
+        "recipient_title": "Valley & Shepard",
+        "project_created_at": "2026-09-30T01:22:33+00:00"
+      },
+      "settings": {
+        "music_volume": 23,
+        "starting_volume": 23,
+        "recipient_title": "Valley & Shepard",
+        "recipient_name": "Amani Hill",
+        "published_page_url": "",
+        "message_overlay_preset": "black",
+        "message_overlay_opacity": 91,
+        "curtain_style": "average_color",
+        "project_id": "c73eb44e-6fe1-425c-819d-92684d191fb9",
+        "required_features": [],
+        "recipient_id": "2e3d6cff-5d48-48e8-aecc-b7dcac93522a",
+        "published_public_path": "",
+        "published_at": "",
+        "published_expires_at": "",
+        "publication_provider": "",
+        "published_source_fingerprint": "",
+        "publication_verified": false,
+        "published_github_owner": "",
+        "published_github_repository": "",
+        "project_created_at": "2026-09-30T01:22:33+00:00",
+        "project_published_at": ""
+      },
+      "page_layout": [
+        {
+          "key": "cover",
+          "kind": "cover"
+        },
+        {
+          "key": "letter",
+          "kind": "wall"
+        },
+        {
+          "key": "back",
+          "kind": "back"
+        }
+      ],
+      "page_layout_version": 1,
+      "images": {
+        "cover": {
+          "asset_type": "static",
+          "is_animated_gif": false,
+          "source_file": "cover.png",
+          "preview_file": "cover.png"
+        },
+        "letter": {
+          "asset_type": "static",
+          "is_animated_gif": false,
+          "source_file": "letter.png",
+          "preview_file": "letter.png"
+        },
+        "back": {
+          "asset_type": "static",
+          "is_animated_gif": false,
+          "source_file": "back.png",
+          "preview_file": "back.png"
+        }
+      },
+      "asset_prefix": "gallery/user/pages",
+      "message_html": "<style type=\"text/css\">.lettersmith-defaults p,.lettersmith-defaults li{white-space:pre-wrap}.lettersmith-defaults hr{height:1px;border-width:0}.lettersmith-defaults li.unchecked::marker{content:\"\\2610\"}.lettersmith-defaults li.checked::marker{content:\"\\2612\"}</style><div class=\"lettersmith-defaults\"><!-- lettersmith-style-state:v2:eyJibG9ja3MiOlt7Im92ZXJyaWRlcyI6W10sInN0eWxlIjoidGl0bGUifSx7Im92ZXJyaWRlcyI6W10sInN0eWxlIjpudWxsfSx7Im92ZXJyaWRlcyI6W10sInN0eWxlIjpudWxsfSx7Im92ZXJyaWRlcyI6W10sInN0eWxlIjpudWxsfSx7Im92ZXJyaWRlcyI6W3siZW5kIjo1NSwibWFzayI6WyJmb250X2NvbG9yIl0sInN0YXJ0IjowfV0sInN0eWxlIjpudWxsfV0sImRlZmluaXRpb25zIjp7InN0eWxlcyI6eyJoZWFkaW5nXzEiOnsiZm9udF9jb2xvciI6IiNmMWVlZTgiLCJmb250X2ZhbWlseSI6IlBhcHlydXMiLCJmb250X3NpemUiOjI0LjAsImZvbnRfd2VpZ2h0Ijo3MDAsIml0YWxpYyI6ZmFsc2UsInBhcmFncmFwaCI6bnVsbCwic3RyaWtldGhyb3VnaCI6ZmFsc2UsInVuZGVybGluZSI6ZmFsc2V9LCJoZWFkaW5nXzIiOnsiZm9udF9jb2xvciI6IiNmMWVlZTgiLCJmb250X2ZhbWlseSI6IlBhcHlydXMiLCJmb250X3NpemUiOjIwLjAsImZvbnRfd2VpZ2h0Ijo3MDAsIml0YWxpYyI6ZmFsc2UsInBhcmFncmFwaCI6bnVsbCwic3RyaWtldGhyb3VnaCI6ZmFsc2UsInVuZGVybGluZSI6ZmFsc2V9LCJoZWFkaW5nXzMiOnsiZm9udF9jb2xvciI6IiNmMWVlZTgiLCJmb250X2ZhbWlseSI6IlBhcHlydXMiLCJmb250X3NpemUiOjE4LjAsImZvbnRfd2VpZ2h0Ijo3MDAsIml0YWxpYyI6ZmFsc2UsInBhcmFncmFwaCI6bnVsbCwic3RyaWtldGhyb3VnaCI6ZmFsc2UsInVuZGVybGluZSI6ZmFsc2V9LCJub3JtYWxfdGV4dCI6eyJmb250X2NvbG9yIjoiI2YxZWVlOCIsImZvbnRfZmFtaWx5IjoiUGFweXJ1cyIsImZvbnRfc2l6ZSI6MTYuMCwiZm9udF93ZWlnaHQiOjQwMCwiaXRhbGljIjpmYWxzZSwicGFyYWdyYXBoIjpudWxsLCJzdHJpa2V0aHJvdWdoIjpmYWxzZSwidW5kZXJsaW5lIjpmYWxzZX0sInN1YnRpdGxlIjp7ImZvbnRfY29sb3IiOiIjZjFlZWU4IiwiZm9udF9mYW1pbHkiOiJQYXB5cnVzIiwiZm9udF9zaXplIjoyMC4wLCJmb250X3dlaWdodCI6NDAwLCJpdGFsaWMiOnRydWUsInBhcmFncmFwaCI6bnVsbCwic3RyaWtldGhyb3VnaCI6ZmFsc2UsInVuZGVybGluZSI6ZmFsc2V9LCJ0aXRsZSI6eyJmb250X2NvbG9yIjoiI2YxZWVlOCIsImZvbnRfZmFtaWx5IjoiUGFweXJ1cyIsImZvbnRfc2l6ZSI6MjguMCwiZm9udF93ZWlnaHQiOjcwMCwiaXRhbGljIjpmYWxzZSwicGFyYWdyYXBoIjpudWxsLCJzdHJpa2V0aHJvdWdoIjpmYWxzZSwidW5kZXJsaW5lIjpmYWxzZX19LCJ2ZXJzaW9uIjoyfSwic2NoZW1hX3ZlcnNpb24iOjJ9 -->\n\n<!-- lettersmith-message:v2 -->\n\n<p align=\"center\" style=\"margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px\"><span style=\"font-size:28pt; font-weight:700; color:#f1eee8\">Dear Amani Hill,</span></p>\n<p style=\"margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px\"><br></p>\n<p style=\"margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px\">Hey Amani, it's been a while! I hope all is well with you and that life has been treating you kindly. I just wanted to take a moment to send you some encouragement and wish you the very best in whatever you've been up to.</p>\n<p style=\"margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px\">I pray that God continues to guide you, bless you, and give you strength through whatever comes your way. Keep moving forward, stay encouraged, and never forget that with God, all things are possible.</p>\n<p align=\"center\" style=\"margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px\"><a href=\"ultralink:%E2%80%94%20Philippians%204%3A13\" style=\"white-space:normal\"><span style=\"font-weight:700; font-style:italic; color:#fffb82\">“I can do all this through him who gives me strength.”</span></a><span style=\"font-weight:700; color:#fffb82\"> </span><span style=\"font-weight:700\"><br></span></p></div>",
+      "message_resources": [
+        "gallery/user/message/message.png",
+        "gallery/user/message/revisions/20261013-190442-721281__manual-save.html"
+      ],
+      "resources": [
+        "gallery/user/message/message.png",
+        "gallery/user/message/revisions/20261013-190442-721281__manual-save.html",
+        "audio/2600b79893c9e3820490d45dbb310d37.mp3"
+      ],
+      "asset_signatures": {
+        "cover": "2217c7edeac1a8eb51360c55949efed845df069a678a7324dec59211743f8922",
+        "letter": "ff4f0b12a5309b83bf08d88bbaf0f22b623c842058fe8bb47e3d0ee78285db34",
+        "back": "349ca580a84ba0aa66c1c9603ccdf782f541bf3da2145a9cf20f933237780ff0"
+      },
+      "prompt_writer_state": {
+        "version": 6,
+        "type": "",
+        "subject": "",
+        "color": "",
+        "global": "",
+        "cover": "",
+        "letter": "",
+        "wall": "",
+        "back": "",
+        "checks": {
+          "black": false,
+          "white": false,
+          "frame": false,
+          "vignette": false,
+          "polaroid": false,
+          "cardshadow": false,
+          "real": false,
+          "paint": false,
+          "minimal": false,
+          "forbid_text": false,
+          "clean_composition": false,
+          "strong_focal_point": false,
+          "dynamic_angle": false,
+          "cinematic_framing": false,
+          "close_up_focus": false,
+          "full_body_view": false,
+          "wide_scene": false,
+          "simplified_details": false
+        },
+        "resolved_instructions": {},
+        "generated_prompts": {},
+        "generated_input_signature": ""
+      },
+      "sound": {
+        "version": 2,
+        "mode": "single",
+        "single_track_id": "2600b79893c9e382",
+        "playlist": [],
+        "playlist_expanded": true,
+        "selected_track_id": "2600b79893c9e382",
+        "tracks": [
+          {
+            "track_id": "2600b79893c9e382",
+            "asset": "audio/2600b79893c9e3820490d45dbb310d37.mp3",
+            "sha256": "2600b79893c9e3820490d45dbb310d378b360ffef3498abbabd8bdd1bea1b32a",
+            "display_title": "Sung Amazing Grace",
+            "original_name": "Sung Amazing Grace.mp3",
+            "duration_seconds": 179.562667
+          }
+        ]
+      }
+    }
+  }
+}
